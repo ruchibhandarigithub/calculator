@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.calculator{
+  width:300px;
+  display:flex;
   flex-direction: column;
+   border-radius: 20px;
+  margin: 10% auto;
+  padding:40px 40px 10px 40px;
+  align-items: center;
+  height:350px;
+  box-shadow: -30px 10px 100px 10px #FB184E, 10px -30px 100px 10px blue;
+}
+.input{
+  display: flex;
+  flex-direction: column ;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin:15px auto;
+}
+input{
+  padding:10px 80px 10px 10px;
+  border:2px solid black;
+  margin-bottom: 10px;
+
+
+}
+.button{
+   display: flex;
+   gap:12px;
+   margin:10px auto;
+}
+.button button{
+  padding:15px;
   color: white;
+  background-color: black;
 }
-
-.App-link {
-  color: #61dafb;
+input::placeholder{
+  font-weight: bold;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error{
+  color:red;
+  margin-top: 10px;
+}
+.success{
+  color:blue;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.result{
+  font-weight: bold;
+  margin-top: 10px;
 }
